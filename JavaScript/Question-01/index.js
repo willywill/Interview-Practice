@@ -5,7 +5,7 @@ function iterateArray (arr) {
 
   let tempArray = []
   let carry
-  
+
   for (let i = arr.length - 1; i >= 0; i--) {
 
     // If the first element is a 9, we'll add the 10 manually to the array at the beginning to handle the index increase
@@ -17,20 +17,19 @@ function iterateArray (arr) {
 
     // If we get to the last element in the array, increment it
     if (i === arr.length - 1) {
-      arr[i]++
+        arr[i]++
     }
 
     // If carried, add to this current value
     if (carry === 1) {
-      arr[i]++
-      carry = 0
+        arr[i]++
+        carry = 0
     }
 
     // If value is divisible by 10 this will equal 0, and make the carry 1
-    arr[i] %= 10
-
     if (arr[i] % 10 === 0 ) {
-      carry = 1
+        arr[i] %= 10
+        carry = 1
     }
 
     tempArray.unshift(arr[i])
