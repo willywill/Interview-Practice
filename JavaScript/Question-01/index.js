@@ -1,41 +1,43 @@
-const givenArray = [9,9,9] // Try [1,2,3] or [1,9,9]
+// Try different values here: [9], [1,2,3], [9,9,9]
+const givenArray = [3,5,9]
 
-let newArray = []
-let tempArray = []
-let carry
+function iterateArray (arr) {
 
-newArray = () => {
-  // Start from the end of the array and count down towards the beginning
-  for (let i = givenArray.length - 1; i >= 0; i--) {
+  let tempArray = []
+  let carry
+  
+  for (let i = arr.length - 1; i >= 0; i--) {
 
-    if (i === 0 && givenArray[i] == 9) {
+    // If the first element is a 9, we'll add the 10 manually to the array at the beginning to handle the index increase
+    if (i === 0 && arr[i] == 9) {
         tempArray.unshift(0)
         tempArray.unshift(1)
         break
       }
 
-    if (i === givenArray.length - 1) {
-      givenArray[i]++
+    // If we get to the last element in the array, increment it
+    if (i === arr.length - 1) {
+      arr[i]++
     }
 
+    // If carried, add to this current value
     if (carry === 1) {
-      givenArray[i]++
+      arr[i]++
       carry = 0
     }
 
-    /* If the value is divisable by 10 this value will = to 0 and make the carry = 1, continue to the next element
-    */
-    givenArray[i] %= 10
+    // If value is divisible by 10 this will equal 0, and make the carry 1
+    arr[i] %= 10
 
-    if (givenArray[i] % 10 === 0 ) {
+    if (arr[i] % 10 === 0 ) {
       carry = 1
     }
 
-    tempArray.unshift(givenArray[i])
+    tempArray.unshift(arr[i])
   }
 
   return tempArray
 }
 
 console.log(`Initial values are: ${givenArray}.
-Final values are: ${newArray()}.`)
+Final values are: ${iterateArray(givenArray)}.`)
