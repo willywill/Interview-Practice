@@ -9,6 +9,6 @@ givenInput = r'12/30/2017'
  MM/DD/YYYY - 2 digits (0-9), followed by a slash, 2 digits (0-9),
  followed by a slash, 4 digits (0-9)
 '''
-regexExp = re.search(r'[\d{2}]+\/[\d{2}]+\/\d{4}', givenInput)
+regExp = re.search(r'\d{2}\/\d{2}\/\d{4}', givenInput)
 
-print(RegExResult(regexExp))
+print(RegExResult(regExp))
