@@ -1,7 +1,7 @@
 # Question 03
 
-Write a regular expression that matches the US standard MM/DD/YYYY.
+Write a regular expression that matches the US standard date format - MM/DD/YYYY.
 
 ## Example
 
-`12/30/2017` 
+`12/30/2017`
