@@ -1,6 +1,6 @@
 # Question 06
 
-You are to write a function that returns the first recurring letter in an 0(n) fashion.
+You are to write a function that returns the first recurring letter in an array of letters, in an 0(n) fashion.
 
 ## Example
 
