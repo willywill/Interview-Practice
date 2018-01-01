@@ -3,11 +3,11 @@ const letterTracker = new Map<string, number>()
 
 function firstRecurringLetter(): string {
 
-    let recurringLetter: string = null;
+    let recurringLetter: string = null
 
     listOfLetters.forEach(letter => {
         if (letterTracker.has(letter)) {
-            recurringLetter = letter;
+            recurringLetter = letter
     } else {
            letterTracker.set(letter, 1)
        }
