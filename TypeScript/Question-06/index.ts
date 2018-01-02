@@ -5,9 +5,10 @@ function firstRecurringLetter(): string {
 
     let recurringLetter: string = null
 
-    listOfLetters.forEach(letter => {
+    listOfLetters.some(letter => {
         if (letterTracker.has(letter)) {
             recurringLetter = letter
+            return true
     } else {
            letterTracker.set(letter, 1)
        }
