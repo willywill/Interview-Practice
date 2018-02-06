@@ -51,7 +51,7 @@ public class Car
 // Objects using Inheritance
 public class BaseClass
 {
-    public string greeting = "Hello, World!"
+    public string greeting = "Hello, World!";
 }
 
 public class InheritedClass : BaseClass
