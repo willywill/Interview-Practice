@@ -32,3 +32,4 @@ console.log(deckOfCards)
 // Quick and dirty solution
 ['♣️', '♥️', '♦️', '♠️'].map(s => 
   console.log([Array(9).fill(0).map((v, i) => (i+2) + s)].concat([...`A${s}-J${s}-Q${s}-K${s}`.split("-")]).join()))
+
