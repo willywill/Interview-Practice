@@ -18,3 +18,4 @@ class Stack:
      # Returns the size of the stack
      def size(self):
          return len(self.collection)
+
