@@ -10,7 +10,7 @@ static class Print
 
 /// <summary>
 /// Performs a binary search in O(log(n)) fashion over a sorted array.
-/// If the element is in the center it becomes O(n), constant time. Uses a iterative solution.
+/// If the element is in the center it becomes O(1), constant time. Uses a iterative solution.
 /// </summary>
 class BinarySearch
 {
