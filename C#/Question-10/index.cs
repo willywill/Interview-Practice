@@ -88,7 +88,7 @@ public class Person
 
     public override string ToString ()
     {
-      return String.Format("{0} {1}", this.firstName, this.lastName)
+      return String.Format("{0} {1}", this.firstName, this.lastName);
     }
 }
 
@@ -102,7 +102,7 @@ public class Person
     {
       this.firstName = firstName;
       this.lastName = lastName;
-      String.Format("{0} {1}", this.firstName, this.lastName)
+      String.Format("{0} {1}", this.firstName, this.lastName);
     }
 }
 
@@ -110,7 +110,7 @@ public class OtherPerson : Person
 {
     public OtherPerson (string firstName, string lastName) : base(firstName, lastName)
     {
-      String.Format("{0} {1}", firstName, lastName)
+      String.Format("{0} {1}", firstName, lastName);
     }
 }
 
