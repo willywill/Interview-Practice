@@ -32,3 +32,5 @@ class Queue<T> {
     return this._list[this.length - 1];
   }
 }
+
+export default Queue;
